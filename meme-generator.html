@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Meme Generator</h1>
+    <input type="file" id="imageUpload" accept="image/*">
+    <div id="canvasContainer"></div>
+    <div id="controls">
+        <input type="color" id="colorPicker">
+        <input type="range" id="fontSize" min="10" max="100" step="1">
+        <select id="fontFamily">
+            <option value="Arial">Arial</option>
+            <!-- Add more font options here -->
+        </select>
+        <button id="saveMeme">Save Meme</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <script src="meme_generator.js"></script>
+</body>
+</html>
